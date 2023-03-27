@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center text-semibold">Calculate <span class="text-rose-700">Discount</span>
+        </h1>
+    </header>
+    <main>
+        <!-- //display section start -->
+        <section>
+            <div class="grid grid-cols-1 gap-4 w-3/4 mx-auto my-8">
+                <div class="bg-green-500 text-white text-center p-8 rounded-xl">
+                    <h4 class="text-2xl text-semibold">Price</h4>
+                    <h4 class="text-4xl text-semibold">$ <span id="price">100</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- input field section start -->
+        <section>
+            <div class="grid grid-cols-1 gap-4 w-3/4 mx-auto">
+                <div class="bg-green-500  p-8 rounded-xl">
+                    <h4 class="text-4xl text-white my-2">Discount Amount</h4>
+                    <input class="text-xl w-3/4 block rounded p-1" type="text" id="discountCode"
+                        placeholder="Enter the code to discount">
+                    <!-- <input type="button" value="Deposit" id="depositbtn"> -->
+                    <button id="discountBtn" class="bg-blue-500 my-2 rounded p-2 hover:bg-blue-700">Discount</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- js file connection -->
+    <!-- /*lower level script file can get upper level variable
+    here deposit and withdraw can use variable from utilities but utilities can not*/ -->
+    <script src="js/discount.js"></script>
+</body>
+
+</html>
