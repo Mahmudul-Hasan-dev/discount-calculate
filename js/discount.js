@@ -10,12 +10,22 @@ document.getElementById('discountBtn').addEventListener('click', function () {
 
     const discountCodeField = document.getElementById('discountCode');
     const discountCode = discountCodeField.value;
+    discountCodeField.value = '';
+    if (discountCode == 'DISC30') {
 
-    //step 3:calculate the discounted price
-    const discount = prevPrice * 30 / 100;
-    // console.log(discount);
-    const newPrice = prevPrice - discount;
+        //step 3:calculate the discounted price
+        const discount = prevPrice * 30 / 100;
+        // console.log(discount);
+        const newPrice = prevPrice - discount;
 
-    //step 4: set the value
-    priceelement.innerText = newPrice;
+        //step 4: set the value
+        priceelement.innerText = newPrice;
+        return;
+    }
+    else {
+        alert('No discount available on this code.Thank You')
+    }
+
+
+
 })
